@@ -56,7 +56,7 @@ function ForgotPassword() {
                             e.preventDefault();
                             navigate("/");
                           }}
-                        >Cancel</button>
+                        >Cancel New</button>
                       </div>
                     </div>
                   </form>
