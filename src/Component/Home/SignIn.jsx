@@ -18,6 +18,11 @@ function SignIn() {
   const onSubmit = async (data) => {
     console.log(data);
     try {
+      if(data?.email === "admin@gmail.com" && data?.password === "admin"){
+        navigate("JobCreation");
+      }else{
+
+      }
     } catch (error) {
     //   console.log("Error while sign up with the emailid : {0}", data.emailid);
     }

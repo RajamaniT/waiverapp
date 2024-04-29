@@ -6,7 +6,8 @@ import { Form } from "react-bootstrap";
 
 function ForgotPassword() {
   const {
-    handleSubmit, register,
+    handleSubmit,
+    register,
     formState: { errors },
   } = useForm();
 
