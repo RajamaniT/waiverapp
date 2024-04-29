@@ -2,10 +2,11 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
+import { Form } from "react-bootstrap";
 
 function ForgotPassword() {
   const {
-    handleSubmit,
+    handleSubmit, register,
     formState: { errors },
   } = useForm();
 
@@ -19,6 +20,16 @@ function ForgotPassword() {
     }
   };
 
+  const registerOption = {
+    email: {
+      required: "EmailId is required",
+      pattern: {
+        value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
+        message: "Please enter a valid email",
+      },
+    },
+  };
+
   return (
     <div className="container d-flex flex-column">
       <div className="row vh-100">
@@ -30,22 +41,28 @@ function ForgotPassword() {
                 <div className="m-sm-3">
                   <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="border-left-highlight">
-                      <p>A random password will sent out too you emailid.</p>
+                      <p>A random password will sent out to your email id.</p>
                     </div>
                     <hr className="bg-danger border-2 border-top border-primary"></hr>
                     <div className="row input-group mt-3">
-                      <label className="col-md-2 col-form-label">Email</label>
-                      <div className="col-md-10">
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="forgotpassword"
-                          placeholder="Enter your emailid"
-                        ></input>
-                      </div>
+                      {/* <label className="col-md-2 col-form-label">Email</label> */}
+                      <Form.Label className="text-center col-md-3">
+                        Email Id
+                      </Form.Label>
+
+                      <Form.Group className="col-md-9" controlId="emailId">
+                        <Form.Control
+                          type="email"
+                          placeholder="Enter your email"
+                          {...register("email", registerOption.email)}
+                        />
+                        {errors.email && (
+                          <p className="errorMsg">{errors.email.message}</p>
+                        )}
+                      </Form.Group>
                     </div>
                     <div className="row mt-3">
-                      <div className="col-sm-6 offset-sm-2">
+                      <div className="col-sm-12 text-center">
                         <button type="submit" className="btn btn-primary">
                           Submit
                         </button>
@@ -56,7 +73,9 @@ function ForgotPassword() {
                             e.preventDefault();
                             navigate("/");
                           }}
-                        >Cancel New</button>
+                        >
+                          Cancel
+                        </button>
                       </div>
                     </div>
                   </form>
