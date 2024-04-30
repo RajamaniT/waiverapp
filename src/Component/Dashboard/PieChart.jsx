@@ -9,7 +9,7 @@ const data = {
     {
       label: "My first data",
       backgroundColor: "rgb(255, 99, 132)",
-      borderColor: "rgb(255, 99, 132)",
+      borderColor: "rgb(255, 199, 32)",
       data: [0, 10, 5, 2, 20, 40, 16, 2],
     },
   ],
@@ -17,7 +17,7 @@ const data = {
 
 function Piechart() {
   return (
-    <div className="bg-bg-white border border-secondary">
+    <div className="bg-white shadow-lg p-4">
       <Pie data={data}></Pie>
     </div>
   );

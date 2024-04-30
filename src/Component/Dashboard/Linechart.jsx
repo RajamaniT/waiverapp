@@ -19,7 +19,7 @@ const data = {
 
 function Linechart() {
   return (
-    <div className="bg-white border border-secondary">
+    <div className="bg-white shadow-lg p-4">
       <Line data={data}></Line>
     </div>
   );

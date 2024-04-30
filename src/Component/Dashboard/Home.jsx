@@ -8,10 +8,10 @@ function Home() {
     <div className="p-5 bg-light">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3 p-3 bg-light">
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 p-3 bg-light rounded">
             <div
               className="d-flex justify-content-between align-items-center 
-              bg-white border border-secondary shadow-sm p-3"
+              bg-white shadow-lg p-3"
             >
               <i className="bi bi-collection fs-1 text-primary"></i>
               <div>
@@ -24,7 +24,7 @@ function Home() {
           <div className="col-12 col-sm-6 col-md-4 col-lg-3 p-3 bg-light">
             <div
               className="d-flex justify-content-between align-items-center 
-              bg-white border border-secondary shadow-sm p-3"
+              bg-white shadow-lg p-3"
             >
               <i className="bi bi-hourglass-split fs-1 text-warning"></i>
               <div>
@@ -36,7 +36,7 @@ function Home() {
           <div className="col-12 col-sm-6 col-md-4 col-lg-3 p-3 bg-light">
             <div
               className="d-flex justify-content-between align-items-center 
-              bg-white border border-secondary shadow-sm p-3"
+              bg-white shadow-lg p-3"
             >
               <i className="bi bi-check2-circle fs-1 text-success"></i>
               <div>
@@ -45,10 +45,11 @@ function Home() {
               </div>
             </div>
           </div>
+          
           <div className="col-12 col-sm-6 col-md-4 col-lg-3 p-3 bg-light">
             <div
               className="d-flex justify-content-between align-items-center 
-              bg-white border border-secondary shadow-sm p-3"
+              bg-white shadow-lg p-3"
             >
               <i className="bi bi-hand-thumbs-down fs-1 text-danger"></i>
               <div>
