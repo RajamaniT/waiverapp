@@ -19,7 +19,7 @@ function SignIn() {
     console.log(data);
     try {
       if(data?.email === "admin@gmail.com" && data?.password === "admin"){
-        navigate("JobCreation");
+        navigate("Dashboard");
       }else{
 
       }

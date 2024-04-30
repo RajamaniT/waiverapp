@@ -1,0 +1,8 @@
+.sidebar ul li:hover{
+    background-color: rgb(117,117,117);
+   border-radius: 5px;
+}
+
+.sidebar ul li:hover a{
+    color: white;
+}   
