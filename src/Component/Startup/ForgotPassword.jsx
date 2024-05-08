@@ -64,18 +64,18 @@ function ForgotPassword() {
                     </div>
                     <div className="row mt-3">
                       <div className="col-sm-12 text-center">
-                        <button type="submit" className="btn btn-primary">
-                          Submit
+                        <button type="submit" className="btn btn-outline-primary">
+                        <span class="bi bi-envelope-arrow-up m-1"></span> Submit
                         </button>
                         <button
                           to="/"
-                          className="m-3 btn btn-primary"
+                          className="m-3 btn btn-outline-danger"
                           onClick={(e) => {
                             e.preventDefault();
                             navigate("/");
                           }}
                         >
-                          Cancel
+                         <span class="bi bi-x-octagon m-1"></span> Cancel
                         </button>
                       </div>
                     </div>

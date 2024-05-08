@@ -118,9 +118,9 @@ function SignUp() {
                     <div className="text-center mt-3">
                       <button
                         type="submit"
-                        className="btn btn-primary btn-rounded w-55"
+                        className="btn btn-outline-primary btn-rounded"
                       >
-                        Register Now
+                         <span class="bi bi-floppy m-1"></span>Register Now
                       </button>
                     </div>
                   </form>

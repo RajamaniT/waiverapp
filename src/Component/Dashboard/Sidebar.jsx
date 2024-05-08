@@ -13,7 +13,7 @@ function Sidebar() {
           <span className="fs-4">Seng Project</span>
         </span>
         <hr className="text-secondary mt-2" />
-        <ul className="nav nav-pills flex-column mt-3">
+        <ul className="nav nav-pills flex-column mt-3 text-white">
           <li
             className={active === 1 ? "active nav-item p-2" : "nav-item p-2"}
             onClick={(e) => setActive(1)}

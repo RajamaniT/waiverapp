@@ -100,9 +100,9 @@ function SignIn() {
                     <div className="text-center mt-3">
                       <button
                         type="submit"
-                        className="btn btn-primary btn-rounded w-5"
+                        className="btn btn-outline-primary btn-rounded"
                       >
-                        Sign In
+                       <span class="bi bi-box-arrow-in-right m-1"></span> Sign In
                       </button>
                     </div>
                   </form>
