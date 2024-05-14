@@ -87,7 +87,7 @@ function SignIn() {
                     <hr className="bg-danger border-2 border-top border-primary"></hr>
 
                     <div className="d-flex justify-content-end">
-                      <Link
+                      <Link controlId="forgotpassword"
                         to="ForgotPassword"
                         onClick={(e) => {
                           e.preventDefault();
@@ -111,7 +111,7 @@ function SignIn() {
             </div>
             <div className="text-center mb-2">
               Don't have an account?
-              <Link
+              <Link className="ms-1"
                 to="SignUp"
                 onClick={(e) => {
                   e.preventDefault();

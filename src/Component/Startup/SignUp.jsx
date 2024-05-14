@@ -105,7 +105,7 @@ function SignUp() {
 
                     <div className="d-flex justify-content-end">
                       Already registered?
-                      <Link
+                      <Link className="ms-1"
                         to="/"
                         onClick={(e) => {
                           e.preventDefault();
