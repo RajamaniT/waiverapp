@@ -177,13 +177,12 @@ function JobCreationPage() {
               </div>
               <div className="row">
                 <div className="col-12 d-flex justify-content-end mb-3">
-                  <input
-                    className="btn btn-outline-success"
-                    id="submit"
-                    name="submit"
+                  <button
                     type="submit"
-                    value="Create Job"
-                  />
+                    className="btn btn-outline-success btn-rounded"
+                  >
+                    <span class="bi bi-floppy m-1"></span> Create Job
+                  </button>
                 </div>
               </div>
             </div>
