@@ -106,10 +106,10 @@ function SignUp() {
                     <div className="d-flex justify-content-end">
                       Already registered?
                       <Link className="ms-1"
-                        to="/"
+                        to="/Signin"
                         onClick={(e) => {
                           e.preventDefault();
-                          navigate("/");
+                          navigate("/Signin");
                         }}
                       >
                         Sign In

@@ -25,7 +25,7 @@ function Navbar() {
             </div>
 
             <div className="nav-item mx-2 border rounded">
-              <Link to="/"
+              <Link to="/Signin"
                 href="#pablo"
                 data-rb-event-key="#pablo"
                 className="m-0 nav-link active"

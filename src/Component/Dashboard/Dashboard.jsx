@@ -7,13 +7,14 @@ import Navbar from "./Navbar";
 function Dashboard() {
   return (
     <div className="d-flex">
-      <div className="w-auto">
+      {/* <div className="w-auto">
         <Sidebar />
       </div>
       <div className="col overflow-auto">
         <Navbar />
         <Home />
-      </div>
+      </div> */}
+      <h3>Dashboard</h3>
     </div>
   );
 }

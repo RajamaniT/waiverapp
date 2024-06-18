@@ -18,7 +18,7 @@ function Sidebar() {
             className={active === 1 ? "active nav-item p-2" : "nav-item p-2"}
             onClick={(e) => setActive(1)}
           >
-            <Link to="/Dashboard" className="p-1">
+            <Link to="/" className="p-1">
               <i className="bi bi-speedometer2  me-3 fs-5"></i>
               <span className="fs-5">Dashboard</span>
             </Link>
@@ -36,7 +36,7 @@ function Sidebar() {
             className={active === 3 ? "active nav-item p-2" : "nav-item p-2"}
             onClick={(e) => setActive(3)}
           >
-            <Link to="/Dashboard" className="p-1">
+            <Link to="/JobDetails" className="p-1">
               <i className="bi bi-table me-3 fs-5"></i>
               <span className="fs-5">Job details</span>
             </Link>
@@ -45,7 +45,7 @@ function Sidebar() {
             className={active === 4 ? "active nav-item p-2" : "nav-item p-2"}
             onClick={(e) => setActive(4)}
           >
-            <Link to="/JobCreation" className="p-1">
+            <Link to="/Others" className="p-1">
               <i className="bi bi-grid me-3 fs-5 "></i>
               <span className="fs-5">Others</span>
             </Link>

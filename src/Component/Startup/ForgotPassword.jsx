@@ -72,7 +72,7 @@ function ForgotPassword() {
                           className="m-3 btn btn-outline-danger"
                           onClick={(e) => {
                             e.preventDefault();
-                            navigate("/");
+                            navigate("/Signin");
                           }}
                         >
                          <span class="bi bi-x-octagon m-1"></span> Cancel

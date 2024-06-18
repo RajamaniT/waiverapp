@@ -19,7 +19,7 @@ function SignIn() {
     console.log(data);
     try {
       if(data?.email === "admin@gmail.com" && data?.password === "admin"){
-        navigate("Dashboard");
+        navigate("/");
       }else{
 
       }
@@ -88,10 +88,10 @@ function SignIn() {
 
                     <div className="d-flex justify-content-end">
                       <Link controlId="forgotpassword"
-                        to="ForgotPassword"
+                        to="/ForgotPassword"
                         onClick={(e) => {
                           e.preventDefault();
-                          navigate("ForgotPassword");
+                          navigate("/ForgotPassword");
                         }}
                       >
                         Forgot Password?
@@ -112,10 +112,10 @@ function SignIn() {
             <div className="text-center mb-2">
               Don't have an account?
               <Link className="ms-1"
-                to="SignUp"
+                to="/SignUp"
                 onClick={(e) => {
                   e.preventDefault();
-                  navigate("SignUp");
+                  navigate("/SignUp");
                 }}
               >
                 Sign Up
